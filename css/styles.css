@@ -1,0 +1,294 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    margin-top: 0;
+    padding-top: .5em;
+    text-align: center;
+    font-size: 2em;
+    color: blueviolet;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    color: blueviolet;
+}
+
+p {
+    font-size: .95em;
+    margin-bottom: 1.8em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+header {
+    background-color: lightgray;
+    margin: 0 auto;
+}
+
+.skillset {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.skillset h3 {
+    font-size: 1.2em;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+.about-me {
+    padding-bottom: 1em;
+}
+
+.about-me p,
+.skillset p {
+    font-size: 1.2em;
+    margin-bottom: 3em;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact p,
+.skills p {
+    font-size: 1.2em;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#portfolio,
+#contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 0;
+}
+
+footer {
+    background-color: lightgray;
+}
+
+footer p {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 1em 1em 2em 1em;
+    font-size: 15px;
+}
+
+
+/* ---- Navigation ---- */
+
+ul {
+    padding-left: 0;
+}
+
+.main-nav li,
+.footer-nav li {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+    /* background-color: rgb(217, 249, 255); */
+}
+
+.main-nav a:hover,
+.footer-nav a:hover {
+    background-color: rgba(217, 249, 255, 0.5);
+    color: rgba(0, 0, 0, .6)
+}
+
+.footer-nav {
+    display: none;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.container {
+    width: 100%;
+}
+
+
+/* ---- Page Elements ---- */
+
+.profile-pic {
+    margin-top: 70px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+    header {
+        text-align: center;
+    }
+    .profile-pic {
+        margin-right: 30px;
+        margin-left: 20px;
+        width: 30%;
+        margin-top: 0;
+        float: right;
+    }
+    .about-me {
+        background-color: lightgray;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+    .about-me p {
+        text-align: left;
+    }
+    /* ---- Navigation ---- */
+    .name,
+    .main-nav li {
+        display: inline-block;
+    }
+    .main-nav a,
+    .footer-nav a {
+        padding: 10px;
+        background-color: lightgray;
+    }
+    footer {
+        border-top: rgba(0, 0, 0, 0.5) 1px solid;
+        content: "";
+        display: table;
+        clear: both;
+        margin: 0px;
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    .footer-nav {
+        display: block;
+        float: right;
+        margin-right: 20px;
+    }
+    .footer-nav li {
+        float: left;
+    }
+    .container {
+        clear: both;
+    }
+    .rachel {
+        float: left;
+        font-size: 20px;
+    }
+    /* ---- Layout Containers ---- */
+    .container {
+        background-color: white;
+    }
+    .skillset {
+        display: block;
+        width: 50%;
+        float: left;
+        margin: 0 auto;
+    }
+    .wrap {
+        min-height: calc(100vh - 84px);
+    }
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+    .top-button {
+        display: none;
+    }
+}
+
+@media(min-width: 1024px) {
+    .container {
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+    .name {
+        text-align: left;
+        margin-left: 20px;
+        float: left;
+    }
+    .skillset {
+        display: block;
+        width: 33%;
+        float: left;
+        margin: 0 auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .nav-top,
+    .about-me {
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+    /* ---- Navigation ---- */
+    .main-nav,
+    .name,
+    .main-nav li {
+        display: inline-block;
+    }
+    .main-nav {
+        float: right;
+        margin-right: 30px;
+        margin-top: 25px;
+    }
+    .main-nav li {
+        float: left;
+    }
+    /* ---- Page Elements ---- */
+    .about-me {
+        clear: both;
+        padding-top: 50px;
+    }
+    .wrap {
+        min-height: calc(100vh - 84px);
+    }
+    /* ---- Float clearfix ---- */
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
