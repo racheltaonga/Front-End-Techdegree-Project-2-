@@ -1,6 +1,4 @@
-# FEWD---Project-2
-
- Mobile-First Responsive Layout
+# Mobile-First Responsive Layout
 
  For this project, I had to build a responsive, mobile-first layout using HTML and CSS. I was given three image mockups for a mobile, tablet, and desktop layout. I had to match the designs perfectly, where I had to write CSS to style the page for a small mobile device first. Then, using min-width media queries, I had to add breakpoints to adjust the layout for a  wider tablet and desktop screens. 
 
